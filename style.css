@@ -1,0 +1,276 @@
+#homePage
+{
+	background: url(images/backgrounds/beginning.jpg) no-repeat;
+}
+
+#gameOver
+{
+    background: url(images/backgrounds/gameOver.jpg) no-repeat;
+}
+
+#story
+{
+	background: url(images/backgrounds/story.jpg) no-repeat;
+}
+
+audio
+{
+	position: absolute;
+	left : 500px;
+}
+
+#forestEntrance
+{
+	background: url(images/backgrounds/forestEntrance.jpg) no-repeat;
+}
+
+#enterHouse
+{
+	background: url(images/backgrounds/elfHouse.jpg) no-repeat;
+}
+
+#mushrooms
+{
+	background: url(images/backgrounds/mushrooms.jpg) no-repeat;
+}
+
+#deerKing
+{
+	background: url(images/backgrounds/cerf.jpg) no-repeat;
+}
+
+#rocks
+{
+	background: url(images/backgrounds/rock.jpg) no-repeat;
+}
+
+#giant
+{
+	background: url(images/backgrounds/treeGiant.jpg) no-repeat;
+}
+
+#river
+{
+	background: url(images/backgrounds/river.jpg) no-repeat;
+}
+
+#cerf
+{
+	background: url(images/backgrounds/cerf2.jpg) no-repeat;
+}
+
+#tunnel
+{
+	background: url(images/backgrounds/tunnel.jpg) no-repeat;
+}
+
+#marais
+{
+	background: url(images/backgrounds/marais.jpg) no-repeat;
+}
+
+#marais2
+{
+	background: url(images/backgrounds/marais2.jpg) no-repeat;
+}
+
+#mountain
+{
+	background: url(images/backgrounds/mountain.jpg) no-repeat;
+}
+
+#cave
+{
+	background: url(images/backgrounds/cave.jpg) no-repeat;
+}
+
+#wolf
+{
+	background: url(images/backgrounds/wolfCave.jpg) no-repeat;
+}
+
+#dark
+{
+	background: black;
+}
+
+#dragon
+{
+	background: url(images/backgrounds/dragon.jpg) no-repeat;
+}
+
+#exitCave
+{
+	background: url(images/backgrounds/exitCave.jpg) no-repeat;
+}
+
+#shadowCreature
+{
+	background: url(images/backgrounds/Creature.jpg) no-repeat;
+}
+
+#guards
+{
+	background: url(images/backgrounds/guards.jpg) no-repeat;
+}
+
+#castle
+{
+	background: url(images/backgrounds/castle.jpg) no-repeat;
+}
+
+#dungeon
+{
+	background: url(images/backgrounds/castle/dungeon.jpg) no-repeat;
+}
+
+#entryCastle
+{
+	background: url(images/backgrounds/castle/entryCastle.jpg) no-repeat;
+}
+
+#witch
+{
+	background: url(images/backgrounds/angel.jpg) no-repeat;
+}
+
+#end
+{
+	background: url(images/backgrounds/end.jpg) no-repeat;
+}
+
+.floatimage2
+{
+	float: right;
+	position: absolute;
+	top : 540px;
+	right: 50px;
+	height: 175px;
+	width: 175px;
+}
+
+.homePageH1
+{
+	color: white;
+	position: absolute;
+	top : 200px;
+	left: 400px;
+}
+
+h1
+{
+	color: white;
+	position: absolute;
+	left: 570px;
+	top: 100px;
+}
+
+button
+{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 20px;
+	width: 150px;
+	background: transparent;
+	color : white;
+	border-radius: 50px;
+}
+
+button:hover
+{
+	background: lightgrey;
+}
+
+button.inventory
+{
+	border: none;
+	border-radius: 0;
+	margin-right: 70px;
+}
+
+div
+{
+	background: rgb(40,40,40,.7); 
+	border-radius: 10px;
+	padding: 10px;
+	width : 500px;
+	position: absolute;
+	top : 50px;
+	left: 400px;
+	text-align-last: center;
+}
+
+div#story
+{
+	background: rgb(40,40,40,.7); 
+	border-radius: 10px;
+	padding: 10px;
+	width : 500px;
+	position: absolute;
+	top : 100px;
+	left: 400px;
+	text-align: center;
+	color : white;
+	font-size: 18px;
+}
+
+div#inventory
+{
+	background: rgb(40,40,40,.7); 
+	border-radius: 10px;
+	padding: 10px;
+	width : 500px;
+	position: absolute;
+	top : 200px;
+	left: 400px;
+	text-align: center;
+	color : white;
+	font-size: 18px;
+}
+
+div#end
+{
+	background: rgb(40,40,40,.7); 
+	border-radius: 10px;
+	padding: 10px;
+	width : 500px;
+	position: absolute;
+	top : 450px;
+	left: 400px;
+	text-align-last: center;
+}
+
+
+p{
+	font-size : 20px;
+		color: white;
+	text-align: center;
+}
+
+p.object{
+	color : rgb(255,255,255,0);
+}
+
+#startGame
+{
+	position: absolute;
+	top : 300px;
+	left: 550px;
+	color : black;
+}
+
+#start
+{
+	position: absolute;
+	top : 500px;
+	left: 600px;
+	color : black;
+}
+
+#home
+{
+	position: absolute;
+	top : 500px;
+	left: 570px;
+	color : white;
+}

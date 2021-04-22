@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id="deerKing">
+
+			<div>
+          		 <p> 
+          		 	You come face to face with the deer king. He knows all the shortcuts in the forest, his information can be useful to you. Have you got anything to feed him ? 
+           		</p>
+
+           		<a id="link" href="#">
+				<button onclick="food()" >Give food</button>
+				</a>
+
+				<a href="GameOver.html">
+				<button onclick="gameOver()">Try to catch him</button>
+				</a>
+
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventoty">
+			</a>
+
+			<script type="text/javascript">
+							
+			function gameOver()
+			{
+				alert("You don't respect the king of the deer, he puts a spell on you and turns you to ash...");
+			}
+
+				function food()
+				{
+					var promptText = prompt('Look at your inventory, what can you give him');
+
+					if(promptText == 'brown mushroom')
+					{
+						checkData(promptText,'Witch.html','You do not have a brown mushroom in your inventory');
+					}
+					
+					else if(promptText == 'pie')
+					{
+						alert("He do not like stolen pie...");
+						checkData(promptText,'GameOver.html','You do not have a pie in your inventory');
+					}
+				
+				    else if(promptText == 'stone')
+					{
+						alert("You can not give him a stone to eat");
+					}
+					else if(promptText == '')
+					{
+						alert("Please type something");
+					}
+
+					else
+					{
+						alert("You do not have "+promptText+" in your inventory");
+					}
+				}
+			</script>
+
+<script src="../Inventory.js"></script>
+
+</body>
+</html>

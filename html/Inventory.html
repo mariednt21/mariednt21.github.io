@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+
+		<body id="homePage">
+
+			<h1> INVENTORY </h1>
+
+			<div id = "inventory">
+				
+				<button class = "inventory"id="inventory1">Inventory 1</button>
+				<button id="delete1" onclick="deleteData('inventory1'); window.location.reload()">Delete</button>
+				<br>
+				<button class = "inventory" id="inventory2">Inventory 2</button>
+				<button id="delete2" onclick="deleteData('inventory2'); window.location.reload()">Delete</button>
+				<br>
+				<button class = "inventory" id="inventory3">Inventory 3</button>
+				<button id="delete3" onclick="deleteData('inventory3'); window.location.reload()">Delete</button>
+				<br>
+				<button class = "inventory" id="inventory4">Inventory 4</button>
+				<button id="delete4" onclick="deleteData('inventory4') ; window.location.reload()">Delete</button>
+				<br>
+				<br>
+				<button onclick="goBack() ">Back</button>
+			</div>
+
+<script type="text/javascript">
+	
+	let storage1 = localStorage.getItem('inventory1');
+	let storage2 = localStorage.getItem('inventory2');
+	let storage3 = localStorage.getItem('inventory3');
+	let storage4 = localStorage.getItem('inventory4');
+
+	document.getElementById("inventory1").innerHTML = storage1;
+	document.getElementById("inventory2").innerHTML = storage2;
+	document.getElementById("inventory3").innerHTML = storage3;
+	document.getElementById("inventory4").innerHTML = storage4;
+
+	if(storage1 == null){
+		remove('inventory1');
+		remove('delete1');
+	}
+	if(storage2 == null){
+		remove('inventory2');
+		remove('delete2');
+	}
+	if(storage3 == null){
+		remove('inventory3');
+		remove('delete3');
+	}
+	if(storage4 == null){
+		remove('inventory4');
+		remove('delete4');
+	}
+
+	function remove(id) {
+
+				var elem = document.getElementById(id);
+				elem.parentNode.removeChild(elem);
+
+					}
+
+	function goBack() {
+  window.history.back();
+}
+</script>
+
+			<script src="../Inventory.js"></script>
+		</body>
+</html>

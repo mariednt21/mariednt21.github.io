@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id="dragon">
+<div>
+          		 <p> 
+          		 	The dragon is half asleep
+           		</p>
+
+           		<a id="link" href="#">
+				<button onclick="checkData('stone','ExitCave.html','You do not have a stone in your inventory')">Throw a stone to divert his attention</button>
+				</a>
+
+           		<a href="GameOver.html">
+				<button onclick="gameOver()">Getting around it</button>
+				</a>
+
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventory">
+			</a>
+
+
+<script type="text/javascript">
+	function gameOver()
+	{
+		alert("Your footsteps immediately awaken the dragon, which opens its eyes in your direction, spitting its flames at you");
+	}
+
+</script>
+
+			<script src="../Inventory.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id = mushrooms>
+
+<p class="object">brown mushroom</p>
+
+	<div>
+          		<p> 
+          		 	Mushrooms can be very useful when there're magical but also deadly if you pick the wrong one . <br> You hear footsteps behind you...
+           		</p>
+
+           		<a href="GameOver.html">
+				<button onclick="gameOver()">Take a red one</button>
+				</a>
+
+				<a id="link" href="#">
+				<button id="answer1" onclick="hide(), setData(0)">Take a brown one</button>
+				</a>
+
+				<a href="Rocks.html">
+				<button >Run !</button>
+				</a>
+		   </div>
+
+		    <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventoty">
+			</a>
+			<script type="text/javascript">
+				
+				function gameOver()
+				{
+					alert("The red mushrooms are poisoned, as soon as you take them in your hand the poison spreads on your skin...");
+				}
+
+				function hide()
+				{
+					if( document.getElementById("answer1").innerHTML == "Hide behind a tree")
+					{
+						document.getElementById("link").href = "DeerKing.html";
+					}
+					
+
+					document.getElementById("answer1").innerHTML = "Hide behind a tree";
+
+					document.getElementById("answer1").onclick = function(){hide();} ;
+
+				}
+			</script>
+
+				<script src="../Inventory.js"></script>
+
+</body>
+</html>

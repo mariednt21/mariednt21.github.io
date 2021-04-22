@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id="enterHouse">
+
+	<p class="object">pie</p>
+
+           <div>
+          		 <p id="text"> 
+          		 	You entered an elf house named Arwen. On the table is a pie. Do you decide to ask him for the pie or steal it? 
+           		</p>
+				<button id = "answer1" onclick="elf() ; setData(0)" >Ask Arwen for the pie</button>
+				<button id = "answer2" onclick="steal() ; setData(0)">Steal the pie</button>
+
+				<a id = "link" href="ForestEntrance.html">
+				<button id = "answer3">Leave</button>
+				</a>
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventoty">
+			</a>
+
+			<script type="text/javascript">
+				
+				function elf(){
+
+					document.getElementById("enterHouse").style.backgroundImage = "url('../images/backgrounds/elf.jpg')";
+
+					document.getElementById("text").innerHTML = " Take the pie with you ! You'll need it in the forest ! ";
+
+				remove('answer1');
+				remove('answer2');
+
+				}
+
+				function steal(){
+					document.getElementById("text").innerHTML = "You stole the pie, hurry the elf is coming back ! ";
+
+				     document.getElementById("answer3").innerHTML = "exit through the back door";
+
+					document.getElementById("link").href = "Mushrooms.html";
+
+					
+					 remove('answer1');
+				     remove('answer2');
+
+				}
+
+				function remove(id) {
+
+				var elem = document.getElementById(id);
+				elem.parentNode.removeChild(elem);
+
+					}
+
+			</script>
+			<script src="../Inventory.js"></script>
+</body>
+</html>

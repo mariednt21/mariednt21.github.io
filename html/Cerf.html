@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+
+<body id="cerf">
+
+	<div>
+          		 <p> 
+          		 	That deer looks hungry! 
+           		</p>
+           		<a id = "link" href="#">
+				<button onclick="checkData('pie','Tunnel.html','You do not have a pie in your inventory')">Give him a pie</button>
+				</a>
+				<a  href="GameOver.html">
+				<button onclick="gameOver()">Fight</button>
+				</a>
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventory">
+			</a>
+
+			<script type="text/javascript">
+	function gameOver(){
+		alert("The deer is too strong for you, he breaks your neck");
+	}
+</script>
+
+			<script src="../Inventory.js"></script>
+
+</body>
+</html>

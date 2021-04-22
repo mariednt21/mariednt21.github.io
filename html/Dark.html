@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id="dark">
+
+	<div>
+          		 <p> 
+          		 	It's far too dark for you to go on safely...
+           		</p>
+
+           		<a id="link" href="#">
+				<button onclick="checkData('wood','Dragon.html','You do not have a wood in your inventory')">Light a fire</button>
+				</a>
+
+           		<a href="GameOver.html">
+				<button onclick="gameOver()">Continue in the dark</button>
+				</a>
+
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventory">
+			</a>
+
+<script type="text/javascript">
+	function gameOver()
+	{
+		alert("You can't see well enough to see the ravine you are falling into...");
+	}
+
+</script>
+<script src="../Inventory.js"></script>
+
+</body>
+</html>

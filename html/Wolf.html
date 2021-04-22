@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id="wolf">
+
+<div>
+          		 <p> 
+          		 	Beware you are entering a wolf's den...
+           		</p>
+
+           		<a id="link" href="#">
+				<button onclick="checkData('magic sword','Dark.html','You do not have a magic sword in your inventory')">Kill the wolf</button>
+				</a>
+
+				<a href="GameOver.html">
+					<button onclick="gameOver()">Getting around it</button>
+				</a>
+
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventory">
+			</a>
+
+			<script type="text/javascript">
+				function gameOver() {
+					alert("The wolf hears you passing behind him and devours you");
+				}
+
+			</script>
+
+<script src="../Inventory.js"></script>
+
+</body>
+</html>

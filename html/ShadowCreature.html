@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id="shadowCreature">
+	 <div>
+
+          		 <p id="question"> 
+          		 	Beware, you are crossing the path of a shadowy creature ! 
+           		</p>
+
+           		<a id="link" href="#">
+				<button id="answer1" onclick="askMore(),checkData('wood','Marais2.html','You do not have wood in your inventory')">Ligth a fire</button>
+				</a>
+
+				<a id="lien" href="#">
+				<button id ="answer2" onclick="askCreature()">Ask him for the location of the witch</button>
+				</a>
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventoty">
+			</a>
+
+			<script type="text/javascript">
+				
+				function askCreature(){
+					document.getElementById("question").innerHTML = "The access to the witch's entrance is camouflaged in the swamp, deep in the forest.";
+
+					if(document.getElementById("answer2").innerHTML == "Digging in the swamp"){
+					document.getElementById("lien").href = "Marais2.html";
+					}
+
+					document.getElementById("answer2").innerHTML = "Digging in the swamp";
+
+					document.getElementById("answer1").innerHTML = "Ask for more informations";
+
+
+					document.getElementById("answer1").onclick = function() {askMore();};
+				}
+
+				function askMore(){
+					if(document.getElementById("answer1").innerHTML == "Ask for more informations"){
+
+						alert("The creature's patience has its limits, it is getting hungry...");
+
+						document.getElementById("link").href = "GameOver.html";
+					}
+				}
+
+
+			</script>
+
+			<script src="../Inventory.js"></script>
+
+</body>
+</html>

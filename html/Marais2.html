@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id = "marais2">
+
+			<div>
+          		<p id="test"> 
+          		 	Look for clues in the landscape ! 
+           		</p>
+		   </div>
+
+		    <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventory">
+			</a>
+
+  			 <a href="Cave.html">
+			<button id="waterfall">Behind the waterfall</button>
+			</a>
+
+			<a href="GameOver.html">
+			<button id="water" onclick="gameOver()">Swim underwater</button>
+			</a>
+
+			<script type="text/javascript">
+				
+				function gameOver()
+				{
+					alert("The water flow is far too fast, you get swept away and drown");
+				}
+			</script>
+
+</body>
+
+<style type ="text/css">
+
+	button#waterfall
+	{
+		position: absolute;
+		top: 300px;
+		left: 480px;
+		height: 190px;
+		width: 50px;
+		border : none;
+		background: rgb(0;0;0;0);
+		color: transparent;
+	}
+
+	button#waterfall:hover
+	{
+		border : none;
+		background: lightgrey;
+		color : white;
+	}
+
+	button#water
+	{
+		position: absolute;
+		top: 500px;
+		left: 400px;
+		height: 190px;
+		width: 400px;
+		border : none;
+		border-radius: 100px;
+		background: rgb(0;0;0;0);
+		color: transparent;
+	}
+
+	button#water:hover
+	{
+		border : none;
+		background: lightgrey;
+		color : white;
+	}
+
+</style>
+
+</html>

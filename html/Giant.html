@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../style.css"/>
+	<title>ADVENTURE GAME</title>
+</head>
+<body id="giant">
+
+	<div>
+          		 <p> 
+          		 	Here is a forest giant, they can be as friendly as dangerous, just treat them with respect.
+           		</p>
+           		<a href="GameOver.html">
+				<button onclick="gameOver()">Throw him a stone</button>
+				</a>
+
+				<a id="link" href="#">
+				<button onclick="checkData('pie','Marais.html','You do not have a pie in your inventory')">Give him a pie</button>
+				</a>
+
+				<a  href="DeerKing.html">
+				<button >Pass discreetly behind him</button>
+				</a>
+
+		   </div>
+
+		   <a href="Inventory.html">
+			<img src="../images/icons/balluchon.gif" class = "floatimage2" alt ="inventoty">
+			</a>
+
+<script type="text/javascript">
+	
+	function gameOver()
+	{
+		alert("Did you really think a stone would make him happy? He grabs you and crushes you in his hand");
+	}
+
+</script>
+
+<script src="../Inventory.js"></script>
+
+</body>
+</html>
